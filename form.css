@@ -1,0 +1,123 @@
+h1 {  
+    margin-left: 70px;  
+    
+}  
+
+.header{
+    background-color: rgb(235, 170, 224);
+    color: black;
+    text-shadow: black;
+}
+
+form li {  
+    list-style: none;  
+    margin-bottom: 5px;  
+}  
+      
+form ul li label{  
+    float: left;  
+    clear: left;  
+    width: 100px;  
+    text-align: right;  
+    margin-right: 10px;  
+    font-family:Verdana, Arial, Helvetica, sans-serif;  
+    font-size:14px;  
+}  
+      
+form ul li input, select, span {  
+    float: left;  
+    margin-bottom: 10px;  
+}  
+      
+textarea {  
+    float: left;  
+    width: 350px;  
+    height: 150px;  
+}  
+      
+[type="submit"] {   
+    clear:left;
+    align-self: center; 
+    margin: 20px 0 0 230px;  
+    font-size:18px  
+}  
+      
+
+
+.header{
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+.inputMain{
+
+    width: 49%;
+    display: block;
+    float: left;
+    position: absolute;
+    background-image: url("https://wallpaperaccess.com/full/1457552.jpg");
+}
+
+form ul li h2{
+    clear:left;
+    font-size: larger;
+}
+
+.previewMain{
+    margin-left: 50%;
+    height: 100%;
+}
+
+.head{
+    margin-top: auto;
+    display: block;
+    height: 70px;
+    background-color: rgb(186, 132, 199);
+    text-align: center;
+}
+
+.leftpart{
+    display: block;
+    margin-top: auto;
+    height: auto;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    width: 180px;
+    float: left;
+    background-color: rgb(202, 169, 214);
+}
+
+.rightpart{
+    margin-left: 200px;
+    padding-left: 10px;
+    height: auto;
+}
+
+
+.AddSkill{
+    margin-left: 40px;
+    clear:left;
+    margin-top: auto;
+}
+
+.Addpro{
+    margin-bottom: 20px;
+    margin-left: 40px;
+    clear:left;
+    margin-top: auto;
+}
+
+ .s{
+     clear:left;
+     margin-bottom: 20px;
+ }  
+ 
+ .ResumePreview{
+     height: 100%;
+ }
+
+ .rightpart h2{
+    background-color: rgb(186, 132, 199);
+  }
+  

@@ -1,0 +1,156 @@
+<!DOCTYPE html>`
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <div class="header">Quollab's Resume Generator</div>
+        <div class="inputMain"> 
+            <div class="inputHeader">INPUT YOUR DETAILS</div>
+            <div class="inputForm"> 
+                
+                <form name='registration' onSubmit="return formValidation();">  
+                    <ul>  
+                        <li><h2 id="a">Personal Information</h2></li>
+        
+                        <li><label for="username">First Name:</label></li>  
+                        <li><input type="text" name="username" size="50" required/></li> 
+                        
+                        <li><label for="username1">Last Name:</label></li>  
+                        <li><input type="text" name="username1" size="50" required/></li> 
+        
+                        <li><label for="address">Address:</label></li>  
+                        <li><input type="text" name="address" size="50" required/></li>  
+        
+                        <li><label for="country">Country:</label></li>  
+                        <li>
+                            <select name="country">  
+                                <option selected="" value="Default">(Please select a country)</option>  
+                                <option value="AF">Australia</option>  
+                                <option value="AL">Canada</option>  
+                                <option value="DZ">India</option>  
+                                <option value="AS">Russia</option>  
+                                <option value="AD">USA</option>  
+                            </select>
+                        </li>  
+                        <li><label for="zip">ZIP Code:</label></li>  
+                        <li><input type="text" name="zip" required/></li>  
+        
+                        <li><label for="email">Email:</label></li>  
+                        <li><input type="text" name="email" size="50" required/></li> 
+        
+                        <!--TODO//: can not select both genders-->
+                        <li><label id="gender">Sex:</label></li>  
+                        <li><input type="radio" name="sex" value="Male" required/><span>Male</span></li>  
+                        <li><input type="radio" name="sex" value="Female" required/><span>Female</span></li>  
+        
+                        <li><label>Language:</label></li>  
+                        <li><input type="checkbox" name="en" value="en" /><span>English</span></li>  
+                        <li><input type="checkbox" name="nonen" value="nonen" /><span>Non English</span></li>  
+        
+                        <li><label for="desc">About:</label></li>  
+                        <li><textarea name="desc" id="desc" required></textarea></li>  
+                        
+
+
+
+                        <li><h2 id="b"><br>Education</h2></li>
+
+                        
+                        <li><label for="Xpercent">X Percentage:</label></li>  
+                        <li><input type="number" name="Xpercent" required/></li> 
+
+                        <li><label for="XIIpercent">XII Percentage:</label></li>  
+                        <li><input type="number" name="XIIpercent" required/></li>
+
+                        <li><label for="degree">Highest Degree:</label></li>  
+                        <li><input type="text" name="degree" required/></li>
+
+                        <li><label for="insti">Institution:</label></li>  
+                        <li><input type="text" name="insti" required/></li>
+
+                        <li><label for="dept">Department:</label></li>  
+                        <li><input type="text" name="dept" required/></li>
+
+                        <li><input type="submit" name="submit" value="Submit" /></li>  
+                    </ul>  
+                </form> 
+            </div>
+            <div id="AddSkill" class="AddSkill">
+                <br><br><br>
+                <h2 style="font-size: large;">Skills</h2>
+                <input id="skill" placeholder="Input Skills" />
+                <button id="button">Add</button>
+            </div>
+            <div id="Addpro" class="Addpro">
+                <br><br><br>
+                <h2 style="font-size: large;">Projects</h2>
+                <input id="pro1" placeholder="Project Title" size="40"/><br>
+                <textarea id="pro2" placeholder="Describtion"></textarea>
+                <button id="pro3">Add</button>
+                <div id="s"><br><br></div>
+            </div>
+
+        </div>
+        <div class="previewMain">
+            <div class="inputHeader">PREVIEW RESUME
+                
+            </div>
+            <div id="resumeView" class="ResumePreview">
+
+                <div id="head" class="head">
+                    <h1 id="namehead">Full Name</h1>
+                </div>
+
+                <div class="leftpart">
+                    <p><span>Full Name:&nbsp; </span><span id="ps1"> name</span></p><br>
+                    <p><span>Address:&nbsp; </span><span id="ps2"> address</span></p><br>
+                    <p><span>Email:&nbsp; </span><span id="ps7"> email</span></p><br>
+                    <p><span>Country:&nbsp; </span><span id="ps3"> country</span></p><br>
+                    <p><span>Zip Code:&nbsp; </span><span id="ps4"> zip</span></p><br>
+                    <p><span>Gender:&nbsp; </span><span id="ps5"> gender</span></p><br>
+
+                </div>
+
+                <div class="rightpart">
+                    <div class="aboutme">
+                        <h2>Introduction</h2>
+                        <p id="abme">About Me</p>
+                        <hr>
+                    </div>
+                    <div class="edu">
+                        <h2>Education</h2>
+                        <p><span>Class X Percentage:&nbsp; </span><span id="ed1"> score</span></p><br>
+                        <p><span>Class XII Percentage:&nbsp; </span><span id="ed2"> score</span></p><br>
+                        <p><span>Highest Degree:&nbsp; </span><span id="ed3"> degree name</span></p><br>
+                        <p><span>Institution:&nbsp; </span><span id="ed4"> institue name</span></p><br>
+                        <p><span>Department:&nbsp; </span><span id="ed5"> department name</span></p><br>
+                        <p><hr></p>
+                    </div>
+                    <div class="ski">
+                        <h2>Skills</h2>
+                        <ul id="listskill">
+
+                        </ul>
+                        <hr>
+                    </div>
+
+                    <div class="projectdisplay">
+                        <h2>Projects</h2>
+                        <ul id="listproject">
+
+                        </ul>
+                        <br><br>
+                    </div>
+
+
+                </div>
+        
+            </div>
+
+
+        </div>
+        
+        <script src="form.js"></script>   
+    </body>
+</html>
